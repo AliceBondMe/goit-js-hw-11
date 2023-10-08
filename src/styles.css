@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    padding: 24px;
+    background: url(https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-9817.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.search-form {
+    width: 500px;
+    height: 40px;
+    margin: 48px auto;
+    background: rgba(0, 0, 0, 0.063);
+    border-radius: 3px;
+    border: 1px solid #fff;}
+
+input {
+    width: 370px;
+    height: 100%;
+    padding: 10px 10px;
+    float: left;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+}
+
+input:focus {
+    outline: 0;
+    background: transparent;
+}
+
+.search-btn {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 120px;
+    color: #fff;
+    background: transparent;
+    border-left: 1px solid #fff;
+    border-radius: 0 3px 3px 0;
+}
+
+.search-btn:hover {
+    background: #fff;
+    color: #444;
+    border: none;
+}
+
+.search-btn:active {
+    box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+}
+
+.search-btn:focus {
+    outline: 0;
+}
+
+.search-btn:disabled {
+    color: #444;
+    pointer-events: none;
+}
+
+.gallery {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.gallery__link {
+    width: 100%;
+    height: 240px;
+}
+
+.photo-card {
+    height: 320px;
+    width: calc((100% - 72px)/4);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 0 rgba(244, 244, 244, 0.288);
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    box-shadow: 0 0 20px 0 rgba(248, 248, 248, 0.818);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-end {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 0 rgba(244, 244, 244, 0.288);
+    transition: 0.3s;
+    font-size: 24px;
+}
